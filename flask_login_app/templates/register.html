@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<style>
+    body { font-family: Arial, sans-serif; background: linear-gradient(to right, #ffe6f2, #ffd9e6);
+           display: flex; justify-content: center; align-items: center; height: 100vh; margin:0; }
+    .form-box { background:white; padding:50px 40px; width:360px; border-radius:15px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.1); }
+    h2 { text-align:center; color:#e91e63; margin-bottom:30px; }
+    input { width:100%; padding:14px; margin:12px 0; border-radius:10px; border:1px solid #ccc; outline:none; }
+    input:focus { border-color:#e91e63; }
+    button { margin-top:20px; width:100%; padding:14px; background:#e91e63; color:white; border:none; cursor:pointer; border-radius:10px; font-size:16px; }
+    button:hover { background:#c21858; }
+    p { text-align:center; margin-top:20px; }
+    a { color:#e91e63; text-decoration:none; font-weight:bold; }
+    a:hover { color:#c21858; }
+</style>
+</head>
+<body>
+<div class="form-box">
+    <h2>Register</h2>
+    <form method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login here</a></p>
+</div>
+</body>
+</html>
